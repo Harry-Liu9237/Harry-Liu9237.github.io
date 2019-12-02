@@ -1,13 +1,13 @@
 # Site settings
-title: gankai Blog
-SEOTitle: gankai博客 | gankai Blog
+title: liuchunhui Blog
+SEOTitle: liuchunhui博客 | liuchunhui Blog
 header-img: img/homePage.jpg
-email: gk1424301572@outlook.com
-description: "Things that can make you miserable will surely make you strong, grow up, and must experience what others can't!"
-keyword: "Java, JavaScript, 博客, GitHubGanKai, vue, web, blog, js"
-url: "http://gankai.online/."          # your host, for absolute URL
+email: 187025252007@1636.com
+description: "Everything is possible!"
+keyword: "Java"
+url: "http://Harry-Liu9237.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/GitHubGanKai/blog.git" # you code repository
+github_repo: "https://github.com/Harry-Liu9237/blog.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -18,12 +18,12 @@ sidebar-avatar: /img/about-BY-gentle.png      # use absolute URL, seeing it's us
 
 # SNS settings
 RSS: false
-weibo_username:     6131084360
-zhihu_username:     ren-qing-zi-ji-9
-github_username:    GitHubGanKai
-# facebook_username:  baiying.qiu.7
-jianshu_username:   4365773d2dd5
-#twitter_username:   GitHubGanKai
+weibo_username:     
+zhihu_username:     
+github_username:    Harry-Liu9237
+# facebook_username:  
+jianshu_username:   
+#twitter_username:   
 
 
 
@@ -61,21 +61,21 @@ kramdown:
 # disqus_username: GitHubGanKai
 
 # Gitalk
-gitalk:
-  enable: false    #是否开启Gitalk评论
-  clientID: d2223ef21ecae706fcb4                            #生成的clientID
-  clientSecret: 8fecef465f9f3dc81f11bd98ec59d4644eb9282a    #生成的clientSecret
-  repo: blog    #仓库名称 
-  owner: GitHubGanKai    #github用户名
-  admin: GitHubGanKai
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+#gitalk:
+  #enable: false    #是否开启Gitalk评论
+  #clientID: d2223ef21ecae706fcb4                            #生成的clientID
+  #clientSecret: 8fecef465f9f3dc81f11bd98ec59d4644eb9282a    #生成的clientSecret
+  #repo: blog    #仓库名称 
+  #owner: GitHubGanKai    #github用户名
+  #admin: GitHubGanKai
+  #distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 5b94756de87b260b647aed0a5ca70e7c
+#ba_track_id: 5b94756de87b260b647aed0a5ca70e7c
 
 # Google Analytics
 # ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
@@ -102,9 +102,6 @@ friends: [
     {
         title: "WY",
         href: "http://zhengwuyang.com"
-    },{
-        title: "简书·GK",
-        href: "http://www.jianshu.com/u/4365773d2dd5"
     },{
         title: "Apple",
         href: "https://apple.com"
