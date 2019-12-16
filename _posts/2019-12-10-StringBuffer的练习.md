@@ -56,8 +56,8 @@ public class StringBufferExercise{  <br/>
 
 ### 把字符串中的字符进行排序
 
-public class ArrayTest{
-  public static void main(String[] args){
+    public class ArrayTest{
+      public static void main(String[] args){
       //定义一个字符串
       String s="dacgebf";
       
@@ -69,10 +69,10 @@ public class ArrayTest{
       
       //把排序后的字符数组转成字符串
       String result = String.valueOf(chs);
-  }
+      }
   
-  //冒泡排序
-  public static void bubbleSort(char[] chs){
+    //冒泡排序
+     public static void bubbleSort(char[] chs){
       for(int x=0;x<chs.length-1;x++){
           for(int y=0;y<chs.length-1-x;y++){
             if(chs[y]>chs[y+1]){
@@ -82,5 +82,5 @@ public class ArrayTest{
             }
           }
       }
+    }
   }
-}
