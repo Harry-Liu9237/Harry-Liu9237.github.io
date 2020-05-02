@@ -68,4 +68,9 @@ c.幻象读：一个事务先后读取一个范围的记录，但两次读取的
 （2）基于 TransactionProxyFactoryBean的声明式事务管理
 （3）基于 @Transactional 的声明式事务管理
 （4）基于Aspectj AOP配置事务
-<h1></h1>
+<h1>Spring中有哪些不同的通知类型</h1>
+1.前置通知(Before Advice): 在连接点之前执行的Advice，不过除非它抛出异常，否则没有能力中断执行流。使用 @Before 注解使用这个Advice。
+2.返回之后通知(After Retuning Advice): 在连接点正常结束之后执行的Advice。例如，如果一个方法没有抛出异常正常返回。通过 @AfterReturning 关注使用它。
+3.抛出（异常）后执行通知(After Throwing Advice): 如果一个方法通过抛出异常来退出的话，这个Advice就会被执行。通用 @AfterThrowing 注解来使用。
+4.后置通知(After Advice): 无论连接点是通过什么方式退出的(正常返回或者抛出异常)都会执行在结束后执行这些Advice。通过 @After 注解使用。
+5.围绕通知(Around Advice): 围绕连接点执行的Advice，就你一个方法调用。这是最强大的Advice。通过 @Around 注解使用。
