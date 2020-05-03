@@ -126,7 +126,7 @@ public void test(){
 <h2>2 BlockingQueue</h2>
 <p>blockingQueue主要有5中实现,我感觉都挺有意思的,其中几种还比较常用就都学习了下,这里都介绍下:</p>
 <p>2.1  ArrayBlockingQueue</p>
-<p>基于数组的阻塞队列的实现，在ArrayBlockingQueue内部维护了一个定长数组，以遍缓存队列中的数据对象，其内部没有实现读写分离，也就意味着
+<p>基于数组的阻塞队列的实现，在ArrayBlockingQueue内部，维护了一个定长数组，以遍缓存队列中的数据对象，其内部没有实现读写分离，也就意味着
 生产与并行不能完全分行，长度是需要定义的，可以指定先进先出，也可以指定先进后出，也叫有界队列，在很多场合非常适用</p>
 
 ```
@@ -158,6 +158,8 @@ public void test02() throws Exception{
 }
 ```
 <h2>2.2 LinkedBlockingQueue</h2>
+<p>基于链表的阻塞队列的实现，同ArrayBlockingQueue类似，其内部也维护者一个数据缓冲队列(该队列由一个链表构成)，LinkedBlockingQueue之所以能够
+    高效的处理并发数据，是因为其内部实现采用分离锁(读写分离两个锁)，从而实现生产者与消费者操作的完全并行运行，他是一个无界队列</p>
 
 ```
 @Test
@@ -181,7 +183,8 @@ public void test03(){
 ```
 
 <h2>2.3 SynchronousQueue</h2>
-
+    <p>一种没有缓冲的队列，生产者产生的数据直接会被消费者获取并被消费</p>
+    
 ```
 public static void main(String[] args) {
     SynchronousQueue<String> sq=new SynchronousQueue<String>();
@@ -226,6 +229,7 @@ public static void main(String[] args) {
 ```
 
 <h2>2.4 PriorityBlockingQueue</h2>
+<p>基于优先级的队列(优先级的判断通过构造函数传入的Compator对象来决定，也就是说传入的对象必须实现Compareable接口)，在实现优先级的PriorityBlockingQueue，内部控制线程同步的锁采用的是公平锁，他也是一个无界的队列</p>
 
 ```
 @Test
